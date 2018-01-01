@@ -76,7 +76,7 @@ iframe {
       }
       document.getElementById("uri").value = uri;
     }
-    document.getElementsByTagName("iframe").src = document.getElementById("uri").value;
+    document.getElementsByTagName("iframe")[0].src = document.getElementById("uri").value;
   }
   
   document.getElementById("left").addEventListener("click", () => {
