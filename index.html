@@ -20,7 +20,7 @@ grid-template-areas: "left right uri go" "iframe iframe iframe iframe"
   grid-area: go;
 }
 
-iframe {
+frame {
   grid-area: iframe;
 }
 
@@ -44,7 +44,7 @@ iframe {
 <script>
 (() => {
   function getUriInfo() {
-    let value = document.getElementsById("uri").value;
+    let value = document.getElementById("uri").value;
     let lastSlash = value.lastindexOf("/");
     let lastPound = value.lastindexOf("#");
     if (lastPound === -1) {
