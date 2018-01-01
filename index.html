@@ -96,6 +96,9 @@ iframe {
   document.getElementById("go").addEventListener("click", () => {
     go();
   });
+  if (location.search.length) {
+    go(location.search.substr(1));
+  }
 })();
 </script>
 </body>
