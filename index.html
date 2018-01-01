@@ -102,6 +102,8 @@ iframe {
   });
   if (location.search.length) {
     go(location.search.substr(1));
+    let info = getUriInfo();
+    go(info);
   }
 })();
 </script>
