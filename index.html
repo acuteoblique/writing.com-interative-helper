@@ -45,11 +45,11 @@ iframe {
 (() => {
   function getUriInfo() {
     let value = document.getElementById("uri").value;
-    let lastSlash = value.lastindexOf("/");
-    let lastPound = value.lastindexOf("#");
+    let lastSlash = value.lastIndexOf("/");
+    let lastPound = value.lastIndexOf("#");
     if (lastPound === -1) {
       value = uriAtPosition(value, 0); 
-      lastPound = value.lastindexOf("#");
+      lastPound = value.lastIndexOf("#");
     }
     return {
       uri:  uriWithPositionToOrigianl(value),
