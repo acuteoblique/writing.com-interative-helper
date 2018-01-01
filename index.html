@@ -74,9 +74,9 @@ iframe {
       if (!(typeof uri === "string")) {
         uri = uriAtPosition(uriOrUriInfo.uri, uriOrUriInfo.position);
       }
-      document.getElementsById("uri").value = uri;
+      document.getElementById("uri").value = uri;
     }
-    document.getElementsByTagName("iframe").src = document.getElementsById("uri").value;
+    document.getElementsByTagName("iframe").src = document.getElementById("uri").value;
   }
   
   document.getElementById("left").addEventListener("click", () => {
@@ -94,7 +94,7 @@ iframe {
     go(info);
   });
   document.getElementById("go").addEventListener("click", () => {
-    document.getElementsByTagName("iframe").src = document.getElementsById("uri").value;
+    go();
   });
 })();
 </script>
